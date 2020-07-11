@@ -1,0 +1,24 @@
+/*********** HEADER ***********/
+header {
+    padding-top: 50px;
+}
+
+/*********** MAIN BODY ***********/
+img {
+    height: auto;
+    width: 100%;
+}
+
+#photos-row {
+    column-count: 3;
+	column-gap: 15px;
+	max-width: 1100px;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.photo {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+}
