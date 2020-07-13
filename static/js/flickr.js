@@ -4,7 +4,12 @@ const loadData = (url) => {
         let pictures = data.photos.photo
 
         pictures.map((item) => {
-            photosRow.append(`<div class="photo"><img src="https://farm${item.farm}.staticflickr.com/${item.server}/${item.id}_${item.secret}.jpg"/></div>`);
+            if (item.farm == 0) {
+                photosRow.append(`<div class="photo"></div>`)
+            } else {
+                photosRow.append(`<div class="photo"><img src="https://farm${item.farm}.staticflickr.com/${item.server}/${item.id}_${item.secret}.jpg"/></div>`);
+            }
+
         })
     });
 };
